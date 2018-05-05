@@ -76,21 +76,19 @@ td{
 #table3{
   margin: 75px;
   border-collapse: separate;
-  border-spacing: 20px;
+  border-spacing: 0;
 }
 
 #drinksImg{
   display: flex;
-  border: solid 1px #dadee5;
-  margin-left: 70px;
-  padding: 10px;
-
-  width: 400px;
+  margin-left: 85px;
 }
 
-#fastContent{
-  margin-right: 100px;
-  width: 400px;
-  text-align: left;
-  margin-top: 0;
+#drinksContent{
+text-align: right;
+width: 410px;
+}
+
+#drinksContent2{
+  width: 10px
 }
