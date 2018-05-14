@@ -1,4 +1,4 @@
-.jumbotron{
+.jumbotron {
   background-image: url(../images/landing.jpg);
   margin-bottom: 0;
   border-radius: 0;
@@ -7,88 +7,391 @@
   color: #FFFFFF;
 }
 
-.jumbotron img{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+.jumbotron img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.jumbotron h3{
+.jumbotron h3 {
   text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 35px;
 }
 
-#table1{
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #F15A29;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+#navSpan{
+  margin-left: 30px;
+}
+
+#table1 {
   margin-top: 0;
 }
 
-td{
-  width: 277.5px;
+td {
+  width: 320.5px;
+
 }
 
-.happy{
+td h5 {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+td h5 {
+  margin-top: 30px;
+}
+
+.happy {
   background-color: #F2F4FF;
   margin-top: 0;
 }
 
-.party{
-  background-color: #EF561A;
+.party {
+  background-color: #F15A29;
   color: #FFFFFF;
 }
 
-.br{
+.br {
   background-image: url(../images/breakfast.jpg);
   color: #FFFFFF;
   margin-top: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.ln{
+.ln {
   background-image: url(../images/lunch.jpg);
   color: #FFFFFF;
   margin-top: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.dn{
+.dn {
   background-image: url(../images/dinner.jpg);
   color: #FFFFFF;
   margin-top: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-#table2{
+#table2 {
   margin: 75px;
   border-collapse: separate;
   border-spacing: 20px;
 }
 
-#fastImg{
+#fastImg {
   border: solid 1px #dadee5;
   margin-right: 70px;
+  margin-left: 100px;
   padding: 10px;
   width: 450px;
 }
 
-#fastContent{
+#fastContent {
   margin-left: 100px;
   width: 400px;
   text-align: left;
   margin-top: 0;
 }
 
-#table3{
-  margin: 75px;
-  border-collapse: separate;
-  border-spacing: 0;
+#fastContent h5{
+  text-align: left;
 }
 
-#drinksImg{
+#fastContent p {
+  text-align: left;
+}
+
+.btn-outline-warning {
+  color: #F15A29;
+  background-color: transparent;
+  background-image: none;
+  border-color: #F15A29;
+  border-radius: 0.15rem;
+  padding-left: 35px;
+  padding-right: 30px;
+}
+
+#table3 {
+  margin-bottom: 100px;
+}
+
+#drnk_imgs {
   display: flex;
-  margin-left: 85px;
+  padding: 10px;
+}
+
+
+
+#drnk_content {
+  text-align: right;
+  margin-top: 45px;
+  margin-right: 50px;
+}
+
+#drnk_content p {
+  text-align: right;
+}
+
+
+/*#drinksImg{
+  display: flex;
+  margin-left: 65px;
+  /*border: solid 1px #dadee5;
+  width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 504px;
+  padding: 5px;
+  height: 390px;
 }
 
 #drinksContent{
-text-align: right;
-width: 410px;
+  text-align: right;
+  width: 495px;
 }
 
 #drinksContent2{
   width: 10px
+}*/
+
+#card_left {
+  color: #F15A29;
+  margin-right: 10px;
+}
+
+#card_right {
+  color: #F15A29;
+  margin-left: 10px;
+
+}
+
+/*Form*/
+
+#form1 {
+    /*margin: 150px;
+  margin-left:300px;*/
+  height: 230px;
+  background-image: url(../images/subscribe.jpg);
+  background-size: 100%;
+}
+
+#form1 h4 {
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form_input {
+  margin: 100px;
+  margin-left: 390px;
+  margin-right: 45px;
+  width: 300px;
+  height: 32px;
+  background-color: rgba(220, 220, 220, 0.1);
+  padding-left: 10px;
+  border-radius: 0.19rem;
+  outline: none;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(0, 0, 0, .15);
+}
+
+.form_button {
+  margin: 100px;
+  margin-left: 0;
+  width: 150px;
+  height: 32px;
+  background-color: #F15A29;
+  border: 0;
+  border-radius: 0.15rem;
+}
+
+.form_button:hover {
+  background-color: #DCDEE8;
+}
+
+.footer {
+  background-color: #F15A29;
+  color: #FFFFFF;
+  height: 250px;
+}
+
+#burgr {
+  float: left;
+  margin-left: 535px;
+  margin-top: 35px;
+}
+
+.footer h1 {
+  position: relative;
+  left: 10px;
+  margin-left: 515px;
+  padding-top: 35px;
+}
+
+.footer p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer_logos {
+  display: flex;
+  justify-content: center;
+}
+
+#fb {
+  margin-right: 12px;
+}
+
+#tw {
+  margin-rigt: 10px;
+}
+
+#pin {
+  margin-left: 12px;
+}
+
+.fp2 {
+  text-align: center;
+  font-size: 10px;
+  padding-top: 30px;
+}
+
+.row {
+  margin-left: 50px;
+}
+
+/*Testimonials*/
+
+#testimonials_1 {
+  padding-right: 30px;
+}
+
+#div_testimonials {
+  border: solid 1px #dadee5;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+
+#div_testimonials h5,
+h6,
+p {
+  text-align: center;
+}
+
+#p2 {
+  margin-left: 5px;
+}
+
+#p3 {
+  margin-left: 5px;
+}
+
+#div_testimonials h5,
+h6 {
+  color: #F15A29;
+}
+
+#about {
+  border-left: solid 1px #dadee5;
+
+}
+
+#about {
+  padding-right: 10px;
+}
+
+#left_angle {
+  padding-left: 145px;
+  color: #F15A29;
+
+}
+
+#right_angle {
+  color: #F15A29;
+}
+
+/*nav*/
+
+#navContainer {
+  padding: 100px;
+  background-image: url(../images/foodsBg.jpg)
+}
+
+#chicken_burger {
+  margin-right: 25px;
+}
+
+#beef_burger {
+  margin-right: 25px;
+}
+
+.card-body {
+  padding-bottom: 35px;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
